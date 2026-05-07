@@ -9,3 +9,4 @@ pydantic
 google-generativeai
 resend
 pymupdf
+python-multipart
