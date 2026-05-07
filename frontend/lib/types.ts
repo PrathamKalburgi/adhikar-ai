@@ -55,7 +55,13 @@ export interface DashboardRow {
   department: string | null;
   deadline: string | null; // YYYY-MM-DD
   days_left_label: string;
-  status: "pending_review" | "pending" | "complied" | "overdue"; // <-- FIXED: Strict Literal Types
+  status:
+  | "pending_review"
+  | "pending"
+  | "verified"
+  | "complied"
+  | "overdue"
+  | "rejected"; // <-- FIXED: Strict Literal Types
   appeal_flag: boolean;
   confidence_score: number; // 0.0 to 1.0
 }
